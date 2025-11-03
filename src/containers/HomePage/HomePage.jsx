@@ -1,0 +1,208 @@
+import { Fragment } from 'react';
+import AboutArea from '../../components/AboutArea/AboutArea';
+import AboutAreaS2 from '../../components/AboutAreaS2/AboutAreaS2';
+import BlogArea from '../../components/BlogArea/BlogArea';
+import BrandArea from '../../components/BrandArea/BrandArea';
+import ColorScheme from '../../components/ColorScheme/ColorScheme';
+import FeatureArea from '../../components/FeatureArea/FeatureArea';
+import FooterArea from '../../components/FooterArea/FooterArea';
+import GalleryArea from '../../components/GalleryArea/GalleryArea';
+import HeaderArea from '../../components/HeaderArea/HeaderArea';
+import HeroArea from '../../components/HeroArea/HeroArea';
+import HotelArea from '../../components/HotelArea/HotelArea';
+import HotelOffersArea from '../../components/HotelOffersArea/HotelOffersArea';
+import RoomsArea from '../../components/RoomsArea/RoomsArea';
+import Scrollbar from '../../components/Scrollbar/Scrollbar';
+import ServiceArea from '../../components/ServiceArea/ServiceArea';
+import TestimonialArea from '../../components/TestimonialArea/TestimonialArea';
+import CtaArea from '../../components/CtaArea/CtaArea';
+import about4 from '../../img/new/95.png';
+import about5 from '../../img/new/96.png';
+import about6 from '../../img/new/97.png';
+import about7 from '../../img/new/98.png';
+import titleimg from '../../img/theme-img/title_icon.svg'
+import Ab1 from '../../img/new/112.mp4'
+import feature2 from '../../img/icon/about_feature_2.svg'
+import feature3 from '../../img/icon/about_feature_3.svg'
+import feature4 from '../../img/icon/about_feature_4.svg'
+import EventArea from '../../components/EventArea/EventArea';
+import ServiceAreaS4 from '../../components/ServiceAreaS4/ServiceAreaS4';
+import RoomsAreaS4 from '../../components/RoomsAreaS4/RoomsAreaS4';
+import MarqueeArea from '../../components/MarqueeArea/MarqueeArea';
+import HotelAreaS2 from '../../components/HotelAreaS2/HotelAreaS2';
+
+
+const HomePage = () => {
+
+   return (
+      <Fragment>
+         <ColorScheme />
+         <HeaderArea hclass={'th-header header-layout1'}  />
+         <HeroArea />
+         {/* <CtaArea hclass={' space-bottom'} /> */}
+         <AboutArea hclass={'about-shape overflow-hidden bg-shape'} />
+         <RoomsArea hclass={'overflow-hidden bg-shape space-top'} />
+         {/* <HotelArea hclass={'bg-shape space-top overflow-hidden'} /> */}
+         {/* <FeatureArea hclass={'space-top overflow-hidden bg-shape'} /> */}
+         
+         {/* <AboutAreaS2 hclass={'about-area2 overflow-hidden shape-mockup-wrap'} /> */}
+         <ServiceArea hclass={'overflow-hidden bg-shape space-top'} />
+         <div className="about-shape overflow-hidden bg-shape " id="about-sec" style={{marginBottom:'100px'}}>
+               <div className="container">
+                   <div className="row gy-60 align-items-center">
+                      
+                       <div className="col-lg-6 col-xxl-6">
+                           <div className="img-box1">
+                               <div className="img1">
+    <video 
+        src={Ab1} 
+        alt="About"
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+        className="w-100 h-100"
+        style={{ objectFit: 'cover' }}
+    />
+</div>
+                               {/* <div className="about-wrapp">
+                                   <CircleText text="* welcome to Azim Group* Committed to People, Committed to Future" />
+                               </div> */}
+                           </div>
+                       </div>
+                       <div className="col-xl-12 col-xxl-4 text-center text-xl-start">
+                           <div className="about-feature-wrap">
+                               <div className="about-feature">
+                                   {/* <div className="box-icon">
+                                       <div className="color-masking">
+                                           <div className="masking-src" ></div>
+                                           <img src={feature1} alt="Icon" />
+                                       </div>
+                                   </div> */}
+                                   <div className="box-content">
+                                    <span className="sub-title2 style1 ">What We Do</span>
+                                       <h1 className="sec-title text-white">Services we provide include</h1>
+                                       
+                                   </div>
+                               </div>
+                               <div className="about-feature">
+                                   <div className="box-icon">
+                                       <div className="color-masking">
+                                           <div className="masking-src" ></div>
+                                           <img src={feature2} alt="Icon" />
+                                       </div>
+                                   </div>
+                                   <div className="box-content">
+                                       {/* <h3 className="box-title">Innovative Vision</h3> */}
+                                       <p className="box-text">Hospitality Staffs like Butler, Captain, bartender, waiter/waitress, host/hostess, commis etc</p>
+                                   </div>
+                               </div>
+                               <div className="about-feature">
+                                   <div className="box-icon">
+                                       <div className="color-masking">
+                                           <div className="masking-src" ></div>
+                                           <img src={feature3} alt="Icon" />
+                                       </div>
+                                   </div>
+                                   <div className="box-content">
+                                       {/* <h3 className="box-title">Commitment to Excellence</h3> */}
+                                       <p className="box-text">Professional Cleaning & Housekeeping services to star facilities</p>
+                                   </div>
+                               </div>
+                               <div className="about-feature">
+                                   <div className="box-icon">
+                                       <div className="color-masking">
+                                           <div className="masking-src" ></div>
+                                           <img src={feature4} alt="Icon" />
+                                       </div>
+                                   </div>
+                                   <div className="box-content">
+                                       {/* <h3 className="box-title">Success</h3> */}
+                                       <p className="box-text">Maintenance services for buildings which includes Plumbing, Electrical, HVAC, Landscaping, Security systems etc</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <HotelAreaS2 hclass={'hotel-area2'} />
+           <MarqueeArea hclass={'marquee-area space-top overflow-hidden'} />
+           <EventArea hclass={'space-extra2-top space-bottom overflow-hidden'} />
+         <div className="space-top" >
+               <div className="row gy-4">
+                  <div className="row justify-content-center">
+                                 <div className="col-lg-5">
+                                    <div className="title-area text-center">
+                                       {/* <span className="sub-title">SERVICES</span> */}
+                                       <h2 className="sec-title ">Strengths and Differentiators</h2>
+                                       <span className="title-img"><img src={titleimg} alt="shape" /></span>
+                                    </div>
+                                 </div>
+                              </div>
+                  <div className="col-xl-6">
+                     <div className="about-card8" style={{background:'linear-gradient(135deg, rgba(0, 183, 190, 0.9) 0%, rgba(0, 120, 106, 0.9) 100%)'}}>
+                        <div className="box-img">
+                           <img src={about4} alt="img" />
+                        </div>
+                        <div className="box-content">
+                           <h4 className="box-title">Highly Qualified Workforce</h4>
+                           <p className="box-text">Professional and trained staff ready to deliver excellence.</p>
+                           {/* <Link onClick={ClickHandler} to="/about" className="th-btn2 th-icon">EXPLORE MORE</Link> */}
+                        </div>
+                     </div>
+                  </div>
+                  <div className="col-xl-6">
+                     <div className="about-card8" style={{background:'linear-gradient(135deg, rgba(248, 151, 51, 0.9) 0%, rgba(255, 195, 0, 0.9) 100%)'}}>
+                        <div className="box-img">
+                           <img src={about5} alt="img" />
+                        </div>
+                        <div className="box-content">
+                           <h4 className="box-title">Scalability without Compromise</h4>
+                           <p className="box-text">Flexible solutions that grow with your needs.</p>
+                           {/* <Link onClick={ClickHandler} to="/about" className="th-btn2 th-icon">BOOK NOW</Link> */}
+                        </div>
+                     </div>
+                  </div>
+                  <div className="col-xl-6">
+                     <div className="about-card8" style={{background:'linear-gradient(135deg, rgba(248, 151, 51, 0.9) 0%, rgba(255, 195, 0, 0.9) 100%)'}}>
+                        <div className="box-img">
+                           <img src={about6} alt="img" />
+                        </div>
+                        <div className="box-content">
+                           <h4 className="box-title">ISO 9001:2015 certified company</h4>
+                           <p className="box-text">Internationally recognized quality standards.</p>
+                           {/* <Link onClick={ClickHandler} to="/about" className="th-btn2 th-icon">BOOK NOW</Link> */}
+                        </div>
+                     </div>
+                  </div>
+                  <div className="col-xl-6">
+                     <div className="about-card8" style={{background:'linear-gradient(135deg, rgba(0, 183, 190, 0.9) 0%, rgba(0, 120, 106, 0.9) 100%)'}}>
+                        <div className="box-img">
+                           <img src={about7} alt="img" />
+                        </div>
+                        <div className="box-content">
+                           <h4 className="box-title">Compliant to Sedex Smeta 4- pillar guidelines</h4>
+                           <p className="box-text">Ethical and sustainable business practices.</p>
+                           {/* <Link onClick={ClickHandler} to="/about" className="th-btn2 th-icon">BOOK NOW</Link> */}
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div> 
+            {/* <RoomsAreaS4 hclass={'offer-area5 position-relative overflow-hidden space-bottom overflow-hidden'} /> */}
+             <ServiceAreaS4 />                       
+         <BrandArea hclass={'space bg-shape'} />
+         
+         {/* <HotelOffersArea hclass={'space-top overflow-hidden bg-shape'} /> */}
+         {/* <GalleryArea hclass={'overflow-hidden bg-shape space-top'} /> */}
+         {/* <TestimonialArea hclass={'overflow-hidden space-top bg-shape TestimonialOn'} /> */}
+         {/* <BlogArea hclass={'space bg-shape overflow-hidden'} /> */}
+         <FooterArea hclass={'footer-wrapper footer-layout1'} />
+         <Scrollbar />
+
+      </Fragment>
+   )
+}
+
+export default HomePage
