@@ -76,14 +76,14 @@ const HotelAreaS2 = (props) => {
                   <div className="title-area text-center space">
                      <span className="sub-title2">Service</span>
                      <h2 className="sec-title">Our Services</h2>
-                     <p className="fs-18 mt-30">
+                     {/* <p className="fs-18 mt-30">
                         We are a Group of companies
 Empowering Growth, Uniting Excellence to Shape Tomorrow's Success
 AZIM Group is a constellation of enterprises at the heart of Qatar's
  dynamic business landscape. With seven unique companies under our banner,
   we orchestrate services to deliver unmatched value across diverse industries
 
-                     </p>
+                     </p> */}
                   </div>
                </div>
             </div>
@@ -97,7 +97,7 @@ AZIM Group is a constellation of enterprises at the heart of Qatar's
                            }`}
                         onMouseEnter={() => setActiveIndex(index)}
                      >
-                        <div className="box-icon" style={{backgroundColor:'#01776E'}}>
+                        <div className="box-icon" style={{backgroundColor:'#FFFFFF'}}>
                            <img src={item.icon} alt="Icon" />
                         </div>
                         <div className="box-content">
