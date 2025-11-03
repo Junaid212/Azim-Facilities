@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Ab5 from '../../img/normal/about_5.jpg'
-import Ab6 from '../../img/normal/about_6.jpg'
+import Ab5 from '../../img/new/141.png'
+import Ab6 from '../../img/new/142.png'
 import Award from '../../img/normal/award-2.png'
 import CountUp from 'react-countup';
 
